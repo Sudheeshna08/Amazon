@@ -271,3 +271,141 @@ ul a:hover{
 {
   padding: 5px;
 }
+/* Global styling for smaller screens */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Small devices (phones) */
+@media only screen and (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        padding: 10px;
+        height: auto;
+    }
+
+    .nav-logo,
+    .nav-address,
+    .nav-signin,
+    .nav-returns,
+    .nav-cart {
+        width: 100%;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    .nav-search {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .shop-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .box {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    .foot-panel2,
+    .foot-panel4 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Medium devices (tablets) */
+@media only screen and (max-width: 768px) {
+    .navbar {
+        flex-wrap: wrap;
+        padding: 10px;
+    }
+
+    .nav-logo,
+    .nav-address,
+    .nav-signin,
+    .nav-returns,
+    .nav-cart {
+        width: 45%;
+        margin-bottom: 5px;
+        text-align: center;
+    }
+
+    .nav-search {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .shop-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .box {
+        width: 45%;
+        margin: 10px;
+    }
+
+    .foot-panel2,
+    .foot-panel4 {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* Large devices (desktops) */
+@media only screen and (min-width: 1024px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .nav-logo,
+    .nav-address,
+    .nav-signin,
+    .nav-returns,
+    .nav-cart {
+        width: auto;
+        margin: 0;
+        text-align: initial;
+    }
+
+    .nav-search {
+        width: 50%;
+    }
+
+    .shop-section {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .box {
+        width: 23%;
+        margin: 15px;
+    }
+
+    .foot-panel2,
+    .foot-panel4 {
+        flex-direction: row;
+        justify-content: space-evenly;
+    }
+}
+
+/* Hero section for small devices */
+@media only screen and (max-width: 768px) {
+    .hero-section {
+        height: 200px;
+        background-size: cover;
+    }
+
+    .hero-msg {
+        font-size: 0.75rem;
+        padding: 5px;
+        text-align: center;
+    }
+}
